@@ -36,6 +36,11 @@ html {
     width: 430px;
   }
 }
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -334,12 +339,15 @@ p {
 }
 
 .benefits__list-item {
-  margin-left: auto;
-  margin-right: auto;
   display: block;
   width: 100%;
   height: auto;
   max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .benefits__list-item {
+    width: 354px;
+  }
 }
 
 .benefits__wrap {
@@ -349,13 +357,16 @@ p {
   height: 120px;
   align-items: center;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 480px) {
   .benefits__wrap {
     width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .benefits__wrap {
+    width: 354px;
   }
 }
 
