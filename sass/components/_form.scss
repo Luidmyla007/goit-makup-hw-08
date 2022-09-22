@@ -3,6 +3,7 @@
     padding-right: 40px;
     padding-bottom: 63px;
     padding-left: 40px;
+    
 }
 
 .modal-title {
@@ -28,7 +29,10 @@
     letter-spacing: 0.03em;
     outline: none;
     padding-left: 40px;
- &:hover{ border-color: var(--accent-color); }
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ &:hover{ border-color: var(--accent-color);}
  &:focus{ border-color: var(--accent-color); }
  &:focus+.modal-icon { fill: var(--accent-color); }
 }
@@ -63,6 +67,9 @@
     outline: none;
     padding-top: 12px;
     padding-left: 23px;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 &:hover{ border-color: var(--accent-color); }
 &:focus{border-color: var(--accent-color);
         outline-color: var(--accent-color);}

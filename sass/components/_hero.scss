@@ -11,8 +11,21 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
+@media screen and(min-width: 480px){
+    height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
 }
+@media screen and(min-width: 768px) {
+height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+}
+}
+
+
+
+
 
 .slogan-title {
     color: var(--accent-text-color);
@@ -25,6 +38,14 @@
     margin-bottom: 30px;
     width: 696px;
     height: 120px;
+    @media screen and(min-width: 480px){
+        width: 360px;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.62;    
+        letter-spacing: 0.06em;
+        text-align: center;
+    }
 }
 
 
@@ -44,3 +65,7 @@
     cursor: pointer;
     border: none
 }
+
+
+
+

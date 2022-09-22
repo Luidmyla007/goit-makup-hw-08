@@ -4,10 +4,10 @@
     // padding-bottom: 94px;
     padding-top: 60px;
     padding-bottom: 60px;
-
+    
 }
 
-.hidden-title{
+.hidden-title {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -21,7 +21,7 @@
   } 
 
 
-.benefits__title{
+.benefits__title {
     color: var(--title-text-color);
         font-weight: 700;
         font-size: 14px;
@@ -34,13 +34,13 @@
 
 
 
-.benefits__after-title{
+.benefits__after-title {
         font-size: 14px;
         line-height: 1.7;
         letter-spacing: 0.03em;
         margin: 0;
 }
-.title-second{
+.title-second {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
@@ -52,7 +52,7 @@
 }
 
 
-.benefits__list-item{
+.benefits__list-item {
     display: block;
     width: 100%;
     height: auto;
@@ -65,16 +65,14 @@
 .benefits__wrap{
     display: flex;
     background-color: var(--color1);
-    // width: 270px;
-    // height: 120px;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;    
     margin-right: auto;
     margin-left: auto;
-    @media screen and(min-width: 480px){width: 450px;}
-    @media screen and(min-width: 768px){width: 354px;}
-    @media screen and(min-width: 1200px){width: 270px; }
+    @media screen and(min-width: 480px){width: 450px; height: 120px;}
+    @media screen and(min-width: 768px){width: 354px; height: 120px;}
+    @media screen and(min-width: 1200px){width: 270px; height: 120px; }
 }
 
 .benefits__list {

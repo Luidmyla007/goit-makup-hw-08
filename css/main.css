@@ -35,17 +35,17 @@ html {
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 450px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 738px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1200px;
   }
 }
 
@@ -275,6 +275,20 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media screen and (min-width: 480px) {
+  .slogan {
+    height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .slogan {
+    height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
 
 .slogan-title {
   color: var(--accent-text-color);
@@ -287,6 +301,16 @@ img {
   margin-bottom: 30px;
   width: 696px;
   height: 120px;
+}
+@media screen and (min-width: 480px) {
+  .slogan-title {
+    width: 360px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-align: center;
+  }
 }
 
 .order {
@@ -383,16 +407,19 @@ img {
 @media screen and (min-width: 480px) {
   .benefits__wrap {
     width: 450px;
+    height: 120px;
   }
 }
 @media screen and (min-width: 768px) {
   .benefits__wrap {
     width: 354px;
+    height: 120px;
   }
 }
 @media screen and (min-width: 1200px) {
   .benefits__wrap {
     width: 270px;
+    height: 120px;
   }
 }
 
@@ -970,6 +997,9 @@ footer .logo-second {
   border: transparent;
   padding: 0;
   margin: 0;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-modal:hover .modal-icon {
   fill: var(--accent-color);
@@ -1019,6 +1049,9 @@ footer .logo-second {
   letter-spacing: 0.03em;
   outline: none;
   padding-left: 40px;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-input:hover {
   border-color: var(--accent-color);
@@ -1056,6 +1089,9 @@ footer .logo-second {
   outline: none;
   padding-top: 12px;
   padding-left: 23px;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-text:hover {
   border-color: var(--accent-color);

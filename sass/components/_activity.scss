@@ -1,7 +1,27 @@
 .activity {
     background-color: var(--accent-text-color);
     padding-bottom: 94px;
-}
+    // @media screen and(min-width: 480px) {
+        // position: absolute;
+            // width: 1px;
+            // height: 1px;
+            // margin: -1px;
+            // border: 0;
+            // padding: 0;
+            // clip: rect(0 0 0 0);
+            // overflow: hidden;
+    // }
+        
+    //  @media screen and(min-width: 768px) { position: absolute;
+        //  width: 1px;
+        // height: 1px;
+        // margin: -1px;
+        // border: 0;
+        // padding: 0;
+        //  clip: rect(0 0 0 0);
+        // overflow: hidden; }
+
+ }
 
 .activity__list {
     display: flex;
@@ -31,5 +51,4 @@
     position: absolute;
     width: 100%;
     bottom: 5px;
-    left: 0;
-}
+    left: 0;}
