@@ -1,9 +1,17 @@
-.header {
+.header { 
+    @media screen and(min-width: 480px){display: none;}
+    @media screen and(min-width: 768px){
+    display: flex;
+    align-items: center;
+    background-color: var(--accent-text-color);}
+    @media screen and(min-width: 1200px){
     display: flex;
     align-items: center;
     background-color: var(--accent-text-color);
 }
+    }
 
+   
 .main-header {
     border-bottom-width: 1px;
     border-bottom-style: solid;
