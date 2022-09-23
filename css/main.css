@@ -78,6 +78,29 @@ img {
   max-width: 100%;
 }
 
+.title-second {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-right: 0;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .title-second {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .title-second {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -332,8 +355,24 @@ img {
 
 .benefits {
   background-color: var(--accent-text-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
+}
+@media screen and (min-width: 480px) {
+  .benefits {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .benefits {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .hidden-title {
@@ -365,17 +404,6 @@ img {
   line-height: 1.7;
   letter-spacing: 0.03em;
   margin: 0;
-}
-
-.title-second {
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-right: 0;
-  margin-bottom: 50px;
 }
 
 .benefits__list-item {
@@ -435,6 +463,18 @@ img {
   background-color: var(--accent-text-color);
   padding-bottom: 94px;
 }
+@media screen and (min-width: 480px) {
+  .activity .is-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
 
 .activity__list {
   display: flex;
@@ -468,8 +508,24 @@ img {
 
 .team {
   background-color: var(--color1);
-  padding-top: 94px;
-  padding-bottom: 94px;
+}
+@media screen and (min-width: 480px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .title-name {
@@ -502,10 +558,29 @@ img {
 .team-photo {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .photo-colleague {
   display: block;
+}
+@media screen and (min-width: 480px) {
+  .photo-colleague {
+    width: 450px;
+    height: 460px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .photo-colleague {
+    width: 354px;
+    height: 374px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .photo-colleague {
+    width: 270px;
+    height: 260px;
+  }
 }
 
 .coleague {
@@ -535,6 +610,9 @@ img {
   align-items: center;
   justify-content: center;
   transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -999,6 +1077,7 @@ footer .logo-second {
   margin: 0;
   transition-property: color;
   transition-duration: 250ms;
+  cursor: pointer;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-modal:hover .modal-icon {
@@ -1071,6 +1150,7 @@ footer .logo-second {
 .modal-label {
   font-size: 12px;
   color: var(--primary-text-color);
+  margin-bottom: 4px;
 }
 
 .modal-text {

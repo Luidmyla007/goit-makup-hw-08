@@ -1,7 +1,19 @@
 .team {
     background-color: var(--color1);
-    padding-top: 94px;
-    padding-bottom: 94px;
+@media screen and(min-width: 480px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and(min-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and(min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .title-name {
@@ -34,11 +46,14 @@
 .team-photo {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .photo-colleague {
     display: block;
-
+ @media screen and(min-width: 480px){width: 450px; height: 460px;}
+ @media screen and(min-width: 768px){width: 354px; height: 374px;}
+ @media screen and(min-width: 1200px){width: 270px; height: 260px;}
 }
 
 .coleague {
@@ -72,6 +87,9 @@
     align-items: center;
     justify-content: center;
     transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover{background-color: var(--accent-color);}
