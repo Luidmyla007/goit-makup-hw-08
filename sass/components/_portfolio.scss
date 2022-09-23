@@ -46,13 +46,13 @@
     &:hover{
         background-color: var(--accent-color);
         color: var(--accent-text-color);
-        box-shadow: 10px 10px 4px 10px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
     }
 
     &:focus{
         background-color: var(--accent-color);
         color: var(--accent-text-color);
-        box-shadow: 10px 10px 4px 10px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
     }
 
 }
@@ -70,11 +70,17 @@
 .choice-applications {
     width: 112px;
     padding: 6px 22px;
+    @media screen and(min-width: 480px) {margin-right: 40px;}
+    @media screen and(min-width: 768px) {margin-right: 8px;}
+    @media screen and(min-width: 1200px) {margin-right: 8px;}
+
+
 }
 
 .choice-design {
     width: 112px;
     padding: 6px 22px;
+    @media screen and(min-width: 480px){width: 103px;}
 }
 
 .choice-marketing {
@@ -140,13 +146,36 @@
 }
 
 .buttons {
+@media screen and(min-width: 480px){
     display: flex;
-    flex-wrap: wrap;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 50px;
-    justify-content: center;
-    gap: 8px;
+        flex-wrap: wrap;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 40px;
+        gap: 8px;
+        justify-content: left;
+        margin-bottom: 40px;
+}
+@media screen and(min-width: 768px) {
+    display: flex;
+        flex-wrap: wrap;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 40px;
+        gap: 8px;
+        justify-content: center;
+        margin-bottom: 30px;
+}
+@media screen and(min-width: 1200px) {
+    display: flex;
+        flex-wrap: wrap;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 50px;
+        justify-content: center;
+        gap: 8px;
+}
+
 }
 
 
