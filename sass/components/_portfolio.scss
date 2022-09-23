@@ -5,8 +5,21 @@
 }
 
 .examples {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @media screen and(min-width: 480px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+    
+        @media screen and(min-width: 768px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+    
+        @media screen and(min-width: 1200px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
+   
 }
 
 
@@ -27,7 +40,7 @@
     border-radius: 4px;
     text-align: center;
     border: 1px solid var(--color1);
-transition-property: box-shadow, background-color, color;
+    transition-property: box-shadow, background-color, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover{
@@ -72,6 +85,18 @@ transition-property: box-shadow, background-color, color;
 
 .card {
     display: block;
+    @media screen and(min-width: 480px) {
+            width: 450px;
+        }
+    
+        @media screen and(min-width: 768px) {
+            width: 354px;
+        }
+    
+        @media screen and(min-width: 1200px) {
+           width: 370px;
+        }
+
 }
 
 .picture {
@@ -116,6 +141,7 @@ transition-property: box-shadow, background-color, color;
 
 .buttons {
     display: flex;
+    flex-wrap: wrap;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 50px;

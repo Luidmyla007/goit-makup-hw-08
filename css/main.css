@@ -540,11 +540,13 @@ img {
 }
 
 .qualification {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
   align-items: center;
   vertical-align: top;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 
 .additional-wrap {
@@ -638,19 +640,50 @@ img {
 
 .clients {
   background-color: var(--accent-text-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+}
+@media screen and (min-width: 480px) {
+  .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
 }
 
 .clients__item {
-  width: 170px;
   height: 92px;
+}
+@media screen and (min-width: 480px) {
+  .clients__item {
+    width: 210px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients__item {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    width: 170px;
+  }
 }
 
 .client-logo {
@@ -784,6 +817,9 @@ footer .logo-second {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-soc-link:hover {
   background-color: var(--accent-color);
@@ -877,9 +913,23 @@ footer .logo-second {
   background-color: var(--accent-text-color);
 }
 
-.examples {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 480px) {
+  .examples {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .examples {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .examples {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .choice-all,
@@ -950,6 +1000,21 @@ footer .logo-second {
 .card {
   display: block;
 }
+@media screen and (min-width: 480px) {
+  .card {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .card {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card {
+    width: 370px;
+  }
+}
 
 .picture {
   text-decoration: none;
@@ -992,6 +1057,7 @@ footer .logo-second {
 
 .buttons {
   display: flex;
+  flex-wrap: wrap;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 50px;
