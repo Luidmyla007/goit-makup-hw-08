@@ -3,12 +3,16 @@
       background-color: var(--accent-background-color);
     padding-top: 60px;
      padding-bottom: 60px;
-      }
       
+        @media screen and(min-width: 480px){
+       
+        }
+          }
 
 .footer-flax {
     display: flex;
     gap: 70px;
+    @media screen and(min-width: 480px){display: block;}
     
 }
 
@@ -21,9 +25,12 @@
     letter-spacing: 0.03em;
     display: block;
     margin-bottom: 20px;
-
+@media screen and(min-width: 480px){text-align: center;}
 }
 
+.footer-adress{
+    @media screen and(min-width: 480px){text-align: center;}
+}
 
 
 .footer-link {
@@ -38,6 +45,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 &:hover{color: var(--accent-color);}
 &:focus{color: var(--accent-color);}
+
 }
 
 .footer-link-contact {
@@ -161,6 +169,9 @@ footer .logo-second {
     gap: 10px;
     justify-content: center;
     align-items: center;
+    @media screen and(min-width: 480px){display: block;
+    align-items: center;
+    }
 
 
 }

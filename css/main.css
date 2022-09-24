@@ -780,10 +780,14 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
 .footer-flax {
   display: flex;
   gap: 70px;
+}
+@media screen and (min-width: 480px) {
+  .footer-flax {
+    display: block;
+  }
 }
 
 .logo-footer {
@@ -795,6 +799,17 @@ footer {
   letter-spacing: 0.03em;
   display: block;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 480px) {
+  .logo-footer {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .footer-adress {
+    text-align: center;
+  }
 }
 
 .footer-link {
@@ -937,6 +952,12 @@ footer .logo-second {
   gap: 10px;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 480px) {
+  .footer-button-wrap {
+    display: block;
+    align-items: center;
+  }
 }
 
 .footer-form-link {
