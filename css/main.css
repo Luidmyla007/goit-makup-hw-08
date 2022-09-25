@@ -487,24 +487,6 @@ img {
   margin-right: auto;
   margin-left: auto;
 }
-@media screen and (min-width: 480px) {
-  .benefits__wrap {
-    width: 450px;
-    height: 120px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .benefits__wrap {
-    width: 354px;
-    height: 120px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .benefits__wrap {
-    width: 270px;
-    height: 120px;
-  }
-}
 
 .benefits__list {
   display: flex;
@@ -648,6 +630,21 @@ img {
   background-color: var(--accent-text-color);
   box-shadow: 0 4 4 0 rgba(0, 0, 0, 0.25);
 }
+@media screen and (min-width: 480px) {
+  .coleague {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .coleague {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .coleague {
+    width: calc((100% - 90px) / 4);
+  }
+}
 
 .soc-list {
   display: flex;
@@ -724,21 +721,22 @@ img {
 }
 
 .clients__item {
+  width: 100%;
   height: 92px;
 }
 @media screen and (min-width: 480px) {
   .clients__item {
-    width: 210px;
+    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 768px) {
   .clients__item {
-    width: 226px;
+    width: calc((100% - 60px) / 3);
   }
 }
 @media screen and (min-width: 1200px) {
   .clients__item {
-    width: 170px;
+    width: calc((100% - 150px) / 6);
   }
 }
 
@@ -1160,21 +1158,6 @@ footer .logo-second {
 .card {
   display: block;
 }
-@media screen and (min-width: 480px) {
-  .card {
-    width: 450px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .card {
-    width: 354px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .card {
-    width: 370px;
-  }
-}
 
 .picture {
   text-decoration: none;
@@ -1255,6 +1238,25 @@ footer .logo-second {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+
+.picture-box {
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .picture-box {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .picture-box {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .picture-box {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .top-text-wrap {
