@@ -137,7 +137,6 @@ footer .logo-second {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
-    vertical-align: top;
     letter-spacing: 0.06;
     background-color: var(--accent-color);
     color: var(--accent-text-color);
@@ -151,6 +150,7 @@ footer .logo-second {
     gap: 10px;
     justify-content: center;
     align-items: center;
+    margin-top: 0;
     @media screen and(min-width: 480px){margin-left: auto; margin-right: auto;}
 }
 
@@ -163,6 +163,7 @@ footer .logo-second {
     color: var(--accent-text-color);
     padding-left: 16px;
     @media screen and(min-width: 480px){width: 450px; margin-bottom: 20px;}
+    @media screen and(min-width: 768px){display: block; width: 450px; margin-bottom: 20px; margin-left: auto; margin-right: auto;}
     @media screen and(min-width: 1200px){width: 358px; padding-left: 16px;}
 }
 
@@ -182,8 +183,10 @@ footer .logo-second {
 }
 
 .footer-button-wrap {
-    @media screen and(min-width: 480px){display: block; align-items: center;}
-    @media screen and(min-width: 1200px){display: flex; gap: 10px; justify-content: center;}
+    @media screen and(min-width: 480px){display: block; }
+    @media screen and(min-width: 768px) {display: block;}
+    @media screen and(min-width: 1200px){display: flex; gap: 10px; justify-content: center;
+    vertical-align: top;}
 
 }
 

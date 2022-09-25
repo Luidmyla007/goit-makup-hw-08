@@ -950,7 +950,6 @@ footer .logo-second {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  vertical-align: top;
   letter-spacing: 0.06;
   background-color: var(--accent-color);
   color: var(--accent-text-color);
@@ -964,6 +963,7 @@ footer .logo-second {
   gap: 10px;
   justify-content: center;
   align-items: center;
+  margin-top: 0;
 }
 @media screen and (min-width: 480px) {
   .footer-email-button {
@@ -985,6 +985,15 @@ footer .logo-second {
   .singl-user-emeil {
     width: 450px;
     margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .singl-user-emeil {
+    display: block;
+    width: 450px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1015,7 +1024,11 @@ footer .logo-second {
 @media screen and (min-width: 480px) {
   .footer-button-wrap {
     display: block;
-    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-button-wrap {
+    display: block;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1023,6 +1036,7 @@ footer .logo-second {
     display: flex;
     gap: 10px;
     justify-content: center;
+    vertical-align: top;
   }
 }
 
