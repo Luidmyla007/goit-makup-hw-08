@@ -832,8 +832,21 @@ footer {
 }
 
 @media screen and (min-width: 480px) {
-  .footer-wrap {
+  .footer-wrap-first {
     margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-wrap-first {
+    display: block;
+    margin-left: 45px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .footer-wrap-second {
+    margin-bottom: 60px;
+    margin-right: 45px;
   }
 }
 
@@ -854,7 +867,7 @@ footer {
 }
 @media screen and (min-width: 768px) {
   .logo-footer {
-    text-align: left;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -870,7 +883,7 @@ footer {
 }
 @media screen and (min-width: 768px) {
   .footer-adress {
-    text-align: left;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
