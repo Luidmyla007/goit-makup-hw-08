@@ -375,6 +375,17 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .menu-open {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-open {
+    display: none;
+  }
+}
+
 .slogan {
   background-color: #C4C4C4;
   text-align: center;
