@@ -3,10 +3,9 @@
     background-color: var(--accent-background-color);
     padding-top: 60px;
     padding-bottom: 60px;
-    @media screen and(min-width: 480px){padding: 60px 0px;}
-    
-    @media screen and(min-width: 768px){padding: 60px 0px;}
-    
+    @media screen and(min-width: 310px) {padding: 60px 0px;}
+    @media screen and(min-width: 480px){padding: 60px 0px;}    
+    @media screen and(min-width: 768px){padding: 60px 0px;}    
     @media screen and(min-width: 1200px){padding: 60px 0px;}
      }
 
@@ -25,11 +24,13 @@
 }
 
 .footer-wrap-first{
+@media screen and(min-width: 480px){margin-bottom: 30px;}
 @media screen and(min-width: 480px){margin-bottom: 60px;}
 @media screen and(min-width: 768px){display: block; margin-left: 45px;}
 @media screen and(min-width: 1200px) {margin-left: 0; text-align: left;}
 }
 .footer-wrap-second{
+    
 @media screen and(min-width: 480px){ margin-bottom: 60px; margin-right: 45px;}
 }
 
