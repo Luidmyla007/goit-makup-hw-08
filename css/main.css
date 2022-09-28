@@ -105,6 +105,12 @@ img {
   }
 }
 
+@media screen and (min-width: 310px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 @media screen and (min-width: 480px) {
   .header {
     display: flex;
@@ -1712,26 +1718,46 @@ footer .logo-second {
   cursor: pointer;
 }
 
-.mob-menu {
-  position: fixed;
-  background-color: var(--accent-text-color);
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  padding: 48px 40px;
+@media screen and (min-width: 310px) and (max-width: 767px) {
+  .mob-menu {
+    position: fixed;
+    background-color: var(--accent-text-color);
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mob-menu {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 310px) {
   .menu-open {
     background-color: var(--accent-text-color);
-    border: 1px solid var(--accent-text-color);
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 480px) {
   .menu-open {
     background-color: var(--accent-text-color);
-    border: 1px solid var(--accent-text-color);
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1846,6 +1872,22 @@ footer .logo-second {
 }
 
 .link-ins ::after {
+  content: "";
+  width: 22px;
+  height: 1px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  position: absolute;
+  transform: rotate(90deg);
+}
+
+.link-tw::after {
+  content: "";
+  width: 22px;
+  height: 1px;
+  background-color: rgba(33, 33, 33, 0.2);
+}
+
+.link-face ::after {
   content: "";
   width: 22px;
   height: 1px;
