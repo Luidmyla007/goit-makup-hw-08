@@ -1,12 +1,14 @@
 .mob-menu{
     @media screen and(min-width: 310px) and(max-width: 767px) {
             position: fixed;
+            z-index: 2;        
             background-color: var(--accent-text-color);
             left: 0;
             top: 0;
             width: 100vw;
             height: 100vh;
             padding: 48px 40px;
+            
     }
 
     
@@ -19,9 +21,12 @@
          }
 
 }
-
-
-
+.mob-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 .menu-open {
     @media screen and(min-width: 310px) {
@@ -82,9 +87,9 @@ top: 10px;
     }
 }
 
-.mobile-navigation{
-    margin-bottom: 302px;
-}
+// .mobile-navigation{
+    // margin-bottom: 302px;
+// }
 .mobile-link-last{
     display: block;
     transition-property: color;
@@ -137,30 +142,53 @@ top: 10px;
     display: flex;
     gap: 20px;
 }
-.link-ins, .link-tw, .link-face, .link-link{
+
+.link-ins,
+.link-tw,
+.link-face,
+.link-link {
     color: var(--accent-color);
-    
+
 }
 
-.link-ins ::after {
+.link-ins::after{
     content: '';
     width: 22px;
     height: 1px;
-border: 1px solid rgba(33, 33, 33, 0.2);
-position: absolute;
-transform: rotate(90deg);
+    background-color: rgba(33, 33, 33, 0.2);
+    display: block;
+    position: relative;
+    transform: rotate(90deg);
+    left: 73px;
+    bottom: 10px;
+    }
 
-}
-.link-tw::after{
+.link-tw::after {
     content: '';
-        width: 22px;
-        height: 1px;
-        background-color: rgba(33, 33, 33, 0.2);
+    width: 22px;
+    height: 1px;
+    background-color: rgba(33, 33, 33, 0.2);
+    display: block;
+    position: relative;
+    transform: rotate(90deg);
+    left: 48px;
+    bottom: 10px;
 }
 
-.link-face ::after{
+ .link-face::after{
     content: '';
-        width: 22px;
-        height: 1px;
-        background-color: var(--primary-text-color);
-}
+    width: 22px;
+    height: 1px;
+    background-color: rgba(33, 33, 33, 0.2);
+    display: block;
+    position: relative;
+    transform: rotate(90deg);
+    left: 68px;
+    bottom: 10px;
+ }
+ .is-hidden {
+     opacity: 0;
+     visibility: hidden;
+     pointer-events: none;
+
+ }

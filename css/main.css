@@ -428,7 +428,7 @@ img {
 }
 @media screen and (min-width: 310px) {
   .slogan-title {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 480px) {
@@ -1721,6 +1721,7 @@ footer .logo-second {
 @media screen and (min-width: 310px) and (max-width: 767px) {
   .mob-menu {
     position: fixed;
+    z-index: 2;
     background-color: var(--accent-text-color);
     left: 0;
     top: 0;
@@ -1738,6 +1739,13 @@ footer .logo-second {
   .mob-menu {
     display: none;
   }
+}
+
+.mob-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 310px) {
@@ -1806,10 +1814,6 @@ footer .logo-second {
   }
 }
 
-.mobile-navigation {
-  margin-bottom: 302px;
-}
-
 .mobile-link-last {
   display: block;
   transition-property: color;
@@ -1867,17 +1871,23 @@ footer .logo-second {
   gap: 20px;
 }
 
-.link-ins, .link-tw, .link-face, .link-link {
+.link-ins,
+.link-tw,
+.link-face,
+.link-link {
   color: var(--accent-color);
 }
 
-.link-ins ::after {
+.link-ins::after {
   content: "";
   width: 22px;
   height: 1px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  position: absolute;
+  background-color: rgba(33, 33, 33, 0.2);
+  display: block;
+  position: relative;
   transform: rotate(90deg);
+  left: 73px;
+  bottom: 10px;
 }
 
 .link-tw::after {
@@ -1885,11 +1895,27 @@ footer .logo-second {
   width: 22px;
   height: 1px;
   background-color: rgba(33, 33, 33, 0.2);
+  display: block;
+  position: relative;
+  transform: rotate(90deg);
+  left: 48px;
+  bottom: 10px;
 }
 
-.link-face ::after {
+.link-face::after {
   content: "";
   width: 22px;
   height: 1px;
-  background-color: var(--primary-text-color);
+  background-color: rgba(33, 33, 33, 0.2);
+  display: block;
+  position: relative;
+  transform: rotate(90deg);
+  left: 68px;
+  bottom: 10px;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }/*# sourceMappingURL=main.css.map */
