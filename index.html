@@ -120,17 +120,33 @@
        <h2 class="title-second">Чим ми займаємося</h2>    
       <ul class="activity__list list">    
           <li>    
-               <div class="activity__wrap"><img src="./images/box1.jpg" alt="створення сайту" width="370"><p class="activity__title">ДЕСКТОПНІ ДОДАТКИ</p></div></li>   
+               <div class="activity__wrap">
+                <img 
+                srcset="./images/activ-first@1x.jpg 1x, ./images/activ-first@2x.jpg 2x" 
+                src="./images/activ-first@1x" alt="створення сайту" width="370">
+                
+                <p class="activity__title">ДЕСКТОПНІ ДОДАТКИ</p></div></li>   
            <li>    
-            <div class="activity__wrap"><img src="./images/box2.jpg" alt="оптимізація сайту" width="370"><p class="activity__title">МОБІЛЬНІ ДОДАТКИ</p></div></li>    
-            <li><div class="activity__wrap"><img src="./images/box3.jpg" alt="просування сайту" width="370"><p class="activity__title">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p></div></li>    
+            <div class="activity__wrap"><img 
+                srcset="./images/activ-second@1x.jpg 1x, ./images/activ-second@2x.jpg 2x"
+                src="./images/activ-second@1x.jpg" alt="оптимізація сайту" width="370"><p class="activity__title">МОБІЛЬНІ ДОДАТКИ</p></div></li>    
+            <li><div class="activity__wrap"><img
+                srcset="./images/activ-third@1x.jpg 1x, ./images/activ-third@2x.jpg 2x"
+                src="./images/activ-third@1x.jpg" alt="просування сайту" width="370"><p class="activity__title">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p></div></li>    
         </ul>   
    </section>    
  <section class="team"> 
      <div class="container"> 
      <h2 class="title-second">Наша команда</h2> 
     <ul class="team-photo list">    
-         <li class="colleague"><img class="photo-colleague" src="./images/photo1.jpg" alt="фото дизайнера продукту"><div class="additional-wrap"><h3 class="title-name">Ігор Дем'яненко</h3><p class="qualification">Product Designer</p>
+         <li class="colleague">
+            <picture>
+            <source media="(min-width: 1200px)" srcset="./images/1team-d@1x.jpg 1x, ./images/1team-d@2x.jpg 2x"/>
+            <source media="(min-width: 768px)" srcset="./images/1team-t@1x.jpg 1x, ./images/1team-t@2x.jpg 2x" type="image/jpg"/>
+            <source media="(min-width: 320px)" srcset="./images/1team-m@1x.jpg 1x, ./images/1team-m@2x.jpg  2x" type="image/jpg"/>
+            <img class="photo-colleague" src="./images/photo1.jpg" alt="фото дизайнера продукту">
+            </picture>
+            <div class="additional-wrap"><h3 class="title-name">Ігор Дем'яненко</h3><p class="qualification">Product Designer</p>
             <ul class="soc-list list"> 
              <li class="soc-item"><a href="" class="soc-link link"><svg class="soc-icon" width="20" height="20"> <use href="./images/icons.svg#icon-instagram"></use></svg></a></li>
             <li class="soc-item"><a href="" class="soc-link link"><svg class="soc-icon" width="20" height="20"><use href="./images/icons.svg#icon-twitter"></use></svg></a></li>
@@ -138,21 +154,42 @@
             <li class="soc-item"><a href="" class="soc-link link"><svg class="soc-icon" width="20" height="20"> <use href="./images/icons.svg#icon-linkedin"></use></svg></a></li> 
          </ul> 
     </div></li> 
-        <li class="colleague"><img class="photo-colleague" src="./images/photo2.jpg" alt="фото розробника"><div class="additional-wrap"><h3 class="title-name">Ольга Рєпіна Frontend</h3><p class="qualification">Developer</p><ul class="soc-list list"> 
+        <li class="colleague">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="./images/2team-d@1x.jpg 1x, ./images/2team-d@2x.jpg 2x" />
+                <source media="(min-width: 768px)" srcset="./images/2team-t@1x.jpg 1x, ./images/2team-t@2x.jpg 2x" />
+                <source media="(min-width: 320px)" srcset="./images/2team-m@1x.jpg 1x, ./images/2team-m@2x.jpg  2x" />
+            <img class="photo-colleague" src="./images/2team-d@1x.jpg" alt="фото розробника">
+            </picture>
+            <div class="additional-wrap"><h3 class="title-name">Ольга Рєпіна Frontend</h3><p class="qualification">Developer</p><ul class="soc-list list"> 
             <li class="soc-item"><a href="" class="soc-link link"><svg class="soc-icon" width="20" height="20"> <use href="./images/icons.svg#icon-instagram"></use></svg></a></li> 
             <li class="soc-item"><a href="" class="soc-link link"><svg class="soc-icon" width="20" height="20"> <use href="./images/icons.svg#icon-twitter"></use></svg></a></li> 
             <li class="soc-item"><a href="" class="soc-link link"><svg class="soc-icon" width="20" height="20"> <use href="./images/icons.svg#icon-facebook"></use></svg></a></li> 
              <li class="soc-item"><a href="" class="soc-link link"><svg class="soc-icon" width="20" height="20"> <use href="./images/icons.svg#icon-linkedin"></use></svg></a></li> 
          </ul></div></li> 
 
-        <li class="colleague"><img class="photo-colleague" src="./images/photo3.jpg" alt="фото маркетолога"><div class="additional-wrap"><h3 class="title-name">Микола Тарасов</h3><p class="qualification">Marketing</p><ul class="soc-list list"> 
+        <li class="colleague">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="./images/3team-d@1x.jpg 1x, ./images/3team-d@2x.jpg 2x" />
+                <source media="(min-width: 768px)" srcset="./images/3team-t@1x.jpg 1x, ./images/3team-t@2x.jpg 2x" />
+                <source media="(min-width: 320px)" srcset="./images/3team-m@1x.jpg 1x, ./images/3team-m@2x.jpg  2x" />
+            <img class="photo-colleague" src="./images/3team-d@1x.jpg" alt="фото маркетолога">
+            </picture>
+            <div class="additional-wrap"><h3 class="title-name">Микола Тарасов</h3><p class="qualification">Marketing</p><ul class="soc-list list"> 
              <li class="soc-item"><a href="" class="soc-link link"><svg class="soc-icon" width="20" height="20"> <use href="./images/icons.svg#icon-instagram"></use></svg></a></li> 
             <li class="soc-item"><a href="" class="soc-link link"><svg class="soc-icon" width="20" height="20"> <use href="./images/icons.svg#icon-twitter"></use></svg></a></li> 
              <li class="soc-item"><a href="" class="soc-link link"><svg class="soc-icon" width="20" height="20"> <use href="./images/icons.svg#icon-facebook"></use></svg></a></li> 
              <li class="soc-item"><a href="" class="soc-link link"><svg class="soc-icon" width="20" height="20"> <use href="./images/icons.svg#icon-linkedin"></use></svg></a></li> 
          </ul></div></li> 
 
-     <li class="colleague"><img class="photo-colleague"src="./images/photo4.jpg" alt="фото дизайнера інтерфейсу користувача"><div class="additional-wrap"><h3 class="title-name">Михайло Єрмаков</h3><p class="qualification">UI Designer</p><ul class="soc-list list"> 
+     <li class="colleague">
+        <picture>
+            <source media="(min-width: 1200px)" srcset="./images/4team-d@1x.jpg 1x, ./images/4team-d@2x.jpg 2x" />
+            <source media="(min-width: 768px)" srcset="./images/4team-t@1x.jpg 1x, ./images/4team-t@2x.jpg 2x" />
+            <source media="(min-width: 320px)" srcset="./images/4team-m@1x.jpg 1x, ./images/4team-m@2x.jpg  2x" />
+        <img class="photo-colleague"src="./images/4team-d@1x.jpg" alt="фото дизайнера інтерфейсу користувача">
+        </picture>
+        <div class="additional-wrap"><h3 class="title-name">Михайло Єрмаков</h3><p class="qualification">UI Designer</p><ul class="soc-list list"> 
              <li class="soc-item"><a href="" class="soc-link link"><svg class="soc-icon" width="20" height="20"> <use href="./images/icons.svg#icon-instagram"></use></svg></a></li> 
              <li class="soc-item"><a href="" class="soc-link link"><svg class="soc-icon" width="20" height="20"> <use href="./images/icons.svg#icon-twitter"></use></svg></a></li> 
              <li class="soc-item"><a href="" class="soc-link link"><svg class="soc-icon" width="20" height="20"> <use href="./images/icons.svg#icon-facebook"></use></svg></a></li> 

@@ -1276,6 +1276,12 @@ footer .logo-second {
   background-color: var(--accent-text-color);
 }
 
+@media screen and (min-width: 320px) {
+  .examples {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 @media screen and (min-width: 480px) {
   .examples {
     padding-top: 60px;
@@ -1423,39 +1429,35 @@ footer .logo-second {
   border-left: 1px solid #EEEEEE;
 }
 
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
+  gap: 8px;
+}
+@media screen and (min-width: 320px) {
+  .buttons {
+    margin-bottom: 40px;
+    justify-content: left;
+  }
+}
 @media screen and (min-width: 480px) {
   .buttons {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: auto;
-    margin-left: auto;
     margin-bottom: 40px;
-    gap: 8px;
     justify-content: left;
-    margin-bottom: 40px;
   }
 }
 @media screen and (min-width: 768px) {
   .buttons {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: auto;
-    margin-left: auto;
     margin-bottom: 40px;
-    gap: 8px;
     justify-content: center;
-    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .buttons {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: auto;
-    margin-left: auto;
     margin-bottom: 50px;
     justify-content: center;
-    gap: 8px;
   }
 }
 
