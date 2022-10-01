@@ -481,12 +481,6 @@ img {
 .benefits {
   background-color: var(--accent-text-color);
 }
-@media screen and (min-width: 310px) {
-  .benefits {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-}
 @media screen and (min-width: 480px) {
   .benefits {
     padding-top: 60px;
@@ -1904,6 +1898,20 @@ footer .logo-second {
   color: var(--accent-color);
 }
 
+.mobile-link-curent {
+  display: block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  margin-bottom: 36px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--accent-color);
+}
+
 .mobile-link, .mobile-link-last {
   font-style: normal;
   font-weight: 500;
@@ -1923,6 +1931,11 @@ footer .logo-second {
   display: block;
   margin-bottom: 32px;
 }
+@media screen and (min-width: 320px) {
+  .mobile-link-tel {
+    font-size: 25px;
+  }
+}
 
 .mobile-link-mail {
   display: block;
@@ -1937,6 +1950,7 @@ footer .logo-second {
 
 .mobile-soc-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
