@@ -19,20 +19,23 @@
 
 .footer-tablet {
 @media screen and(min-width: 480px){display: block;}
-@media screen and(min-width: 768px){display: flex; justify-content: space-between; margin: 0 auto;}
+@media screen and(min-width: 768px){display: flex;
+    
+    justify-content: space-between;
+     margin: 0 auto;}
 @media screen and(min-width: 1200px){display: flex; gap: 70px;}
 }
 
 .footer-wrap-first{
-@media screen and(min-width: 310px) {margin-bottom: 20px;}
-@media screen and(min-width: 480px){margin-bottom: 30px;}
+@media screen and(min-width: 310px) {margin-bottom: 60px;}
 @media screen and(min-width: 480px){margin-bottom: 60px;}
-@media screen and(min-width: 768px){display: block; margin-left: 45px;}
+@media screen and(min-width: 480px){margin-bottom: 60px;}
+@media screen and(min-width: 768px){display: block; margin-left: 89px; }
 @media screen and(min-width: 1200px) {margin-left: 0; text-align: left;}
 }
 .footer-wrap-second{
-    
-@media screen and(min-width: 480px){ margin-bottom: 60px; margin-right: 45px;}
+@media screen and(min-width: 320px){ margin-bottom: 60px; margin-right: auto; margin-left: auto;}
+// @media screen and(min-width: 768px){margin: 0 89px 0 0}
 }
 
 .logo-footer {
