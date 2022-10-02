@@ -14,6 +14,9 @@
     transition-property: opacity;
         transition-duration: 250ms;
     transition: cubic-bezier(0.0, 0.0, 1.0, 1.0);
+    transition-property: visibility;
+        transition-duration: 250ms;
+        transition: cubic-bezier(0.0, 0.0, 1.0, 1.0);
     margin: 0;
 
 }
@@ -44,7 +47,7 @@
      transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transform: translate(-50%, -50%);
-    transition-property: opacity;
+    transition-property: visibility;
     transition-duration: 250ms;
      transition: cubic-bezier(0.0, 0.0, 1.0, 1.0);
      margin: 0;

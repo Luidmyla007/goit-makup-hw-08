@@ -1570,6 +1570,9 @@ footer .logo-second {
     transition-property: opacity;
     transition-duration: 250ms;
     transition: cubic-bezier(0, 0, 1, 1);
+    transition-property: visibility;
+    transition-duration: 250ms;
+    transition: cubic-bezier(0, 0, 1, 1);
     margin: 0;
   }
 }
@@ -1603,7 +1606,7 @@ footer .logo-second {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transform: translate(-50%, -50%);
-    transition-property: opacity;
+    transition-property: visibility;
     transition-duration: 250ms;
     transition: cubic-bezier(0, 0, 1, 1);
     margin: 0;
