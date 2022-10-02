@@ -1554,9 +1554,9 @@ footer .logo-second {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 310px) and (max-width: 480px) {
+@media screen and (min-width: 310px) and (max-width: 600px) {
   .modal {
-    position: fixed;
+    position: absolute;
     left: 50%;
     top: 50%;
     width: 100vw;
@@ -1567,6 +1567,8 @@ footer .logo-second {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transform: translate(-50%, -50%);
+    transition-property: opacity;
+    transition-duration: 250ms;
     transition: cubic-bezier(0, 0, 1, 1);
     margin: 0;
   }
