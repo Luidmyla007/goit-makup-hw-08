@@ -43,6 +43,12 @@
         margin: 0;
         margin-bottom: 10px;
         width: 270px;
+
+    @media screen and(min-width: 310px) and(max-width: 767px){
+       text-align: center;
+        margin-right: auto;
+       margin-left: auto;
+    }
 }
 
 
