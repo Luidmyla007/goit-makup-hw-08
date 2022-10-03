@@ -1,5 +1,5 @@
 .modal {
-@media screen and(min-width: 310px) and(max-width: 600px){
+@media screen and(min-width: 310px) and(max-width: 480px){
     position: absolute;
     left: 50%;
     top: 50%;
@@ -12,22 +12,23 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transform: translate(-50%, -50%);
     transition-property: opacity;
-        transition-duration: 250ms;
+    transition-duration: 250ms;
     transition: cubic-bezier(0.0, 0.0, 1.0, 1.0);
     transition-property: visibility;
-        transition-duration: 250ms;
-        transition: cubic-bezier(0.0, 0.0, 1.0, 1.0);
+    transition-duration: 250ms;
+    transition: cubic-bezier(0.0, 0.0, 1.0, 1.0);
     margin: 0;
 
 }
     
-    @media screen and(min-width: 600px){
+    @media screen and(min-width: 481px) and(max-width: 1200px){
     position: absolute;
     top: 50%;
     left: 50%;
     min-width: 528px;
     min-height: 581px;
     background-color: #fff;
+    // pointer-events: none;
     transform: translate(-50%, -50%);
     transition-property: opacity;
     transition-duration: 250ms;

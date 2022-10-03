@@ -129,6 +129,7 @@ footer .logo-second {
     text-align: center;
     color: var(--accent-text-color);}
     @media screen and(min-width: 1200px){
+    text-align: left;    
     margin-top: 12px;
     margin-bottom: 20px;}
 }
@@ -216,6 +217,7 @@ footer .logo-second {
     margin-bottom: 20px;
     @media screen and(min-width: 310px){margin-left: auto; margin-right: auto;}
     @media screen and(min-width: 480px){margin-left: auto; margin-right: auto;}
+    @media screen and(min-width: 1200px){margin-left: 0; }
 }
 
 .footer-button-wrap {
